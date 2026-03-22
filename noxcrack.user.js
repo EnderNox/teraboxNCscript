@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         NoxCrack - Terabox Bypass
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      2.2.0
 // @description  Professional Terabox direct link extractor - Chrome & Firefox compatible
 // @match        *://localhost:*/*
-// @match        *://*.ton-site-noxc.com/*
+// @match        *://*.-site-noxc.com/*
+// @match        *://*2.56.246.119:30232/*
 // @grant        GM_xmlhttpRequest
 // @connect      1024terabox.com
 // @connect      1024tera.com
@@ -151,7 +152,6 @@
     // ================================================================
     // BRIDGE
     // ================================================================
-
     function initializeBridge() {
         // Signal immédiat au chargement + répétition toutes les secondes
         window.dispatchEvent(new CustomEvent('noxcrack-ready'));
